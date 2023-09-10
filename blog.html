@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Blog - Quiz Hero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              common: ["Rubik", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white font-common">
+    <!-- Header/Navbar section start -->
+    <header class="h-16 flex items-center shadow-sm">
+      <nav class="flex justify-between items-center w-9/12 mx-auto">
+        <div class="text-zinc-800 font-bold uppercase">
+          <h1
+            onclick="location.href='index.html'"
+            class="text-lg cursor-pointer"
+          >
+            Quiz <span class="text-green-700">HERO</span>
+          </h1>
+          <p class="text-[10px] font-normal capitalize -mt-1">
+            Get ready to Quiz and be amazed!
+          </p>
+        </div>
+        <a
+          href="./blog.html"
+          class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
+        >
+          Blog
+        </a>
+      </nav>
+    </header>
+    <!-- Header/Navbar section end -->
+
+    <!-- blog section start -->
+
+    <section class="md:w-9/12 w-[90%] mx-auto mt-8 space-y-8">
+      <!-- question 1 -->
+      <div>
+        <h1 class="mb-3">
+          1. What are the differences between map filter find forEach in
+          javascript?
+        </h1>
+
+        <h3 class="text-sm text-green-600">
+          Answer:
+          <span class="text-black">
+            <ul class="md:w-9/12 mt-1 space-y-1.5">
+              <li>
+                1.
+                <span class="bg-green-600 text-white px-2 rounded">map</span>
+                Returns a new array with the same length as the original array,
+                where each element is transformed according to a function you
+                provide.
+              </li>
+              <li>
+                2.
+                <span class="bg-green-600 text-white px-2 rounded">filter</span>
+                Returns a new array with all elements that pass a test
+                implemented by a function you provide.
+              </li>
+
+              <li>
+                3.
+                <span class="bg-green-600 text-white px-2 rounded">find</span>
+                Returns the first element in the array that passes a test
+                implemented by a function you provide, or undefined if no such
+                element is found.
+              </li>
+
+              <li>
+                4.
+                <span class="bg-green-600 text-white px-2 rounded"
+                  >forEach</span
+                >
+                Calls a function for each element in the array, but does not
+                return anything.
+              </li>
+            </ul>
+          </span>
+        </h3>
+      </div>
+
+      <!-- question 2 -->
+      <div>
+        <h1 class="mb-3">
+          2. What are the differences between localStorage sessionStorage cookie
+          in Browser?
+        </h1>
+
+        <h3 class="text-sm text-green-600">
+          Answer:
+          <span class="text-black">
+            <ul class="md:w-9/12 mt-1 space-y-1.5">
+              <li>
+                1.
+                <span class="bg-green-600 text-white px-2 rounded"
+                  >localStorage</span
+                >
+                Stores key/value pairs in the browser's storage, and persists
+                even after the user closes the browser window or navigates away
+                from the site. The data is associated with a specific domain and
+                is not shared across different domains. localStorage can store
+                more data than cookies, typically up to 5-10 MB.
+              </li>
+              <li>
+                2.
+                <span class="bg-green-600 text-white px-2 rounded"
+                  >sessionStorage</span
+                >
+                Similar to localStorage, but the data is only accessible for the
+                duration of the browser session (i.e. until the user closes the
+                browser window or tab). The data is also associated with a
+                specific domain and is not shared across different domains.
+                sessionStorage can store more data than cookies, typically up to
+                5-10 MB.
+              </li>
+
+              <li>
+                3.
+                <span class="bg-green-600 text-white px-2 rounded">Cookie</span>
+                Stores small amounts of data in the browser's storage, typically
+                limited to 4 KB per cookie. Cookies can be set with an
+                expiration time and can be accessed by both the server and the
+                client, making them useful for storing user-specific data or
+                tracking user behavior across multiple sessions or sites.
+              </li>
+            </ul>
+          </span>
+        </h3>
+      </div>
+
+      <!-- question 3 -->
+      <div>
+        <h1 class="mb-3">
+          3. What is Event loop in javascript and How its works?
+        </h1>
+
+        <h3 class="text-sm text-green-600">
+          Answer:
+          <span class="text-black">
+            The event loop is a key concept in JavaScript that allows the
+            language to handle asynchronous events in a non-blocking way. It is
+            essentially a loop that continuously checks the JavaScript runtime's
+            call stack and task queue, and executes tasks in the task queue when
+            the call stack is empty.
+
+            <h4 class="text-green-600">
+              How it Work:
+              <ul class="text-black space-y-0.5 mt-1.5">
+                <li>
+                  1. The event loop continuously checks the call stack to see if
+                  there are any functions that need to be executed.
+                </li>
+                <li>
+                  2. If the call stack is empty, the event loop looks for any
+                  pending events or callbacks in the event queue.
+                </li>
+                <li>
+                  3. If there are any events or callbacks in the queue, the
+                  event loop takes the first one and pushes it onto the call
+                  stack.
+                </li>
+                <li>
+                  4. The function associated with the event or callback is then
+                  executed.
+                </li>
+
+                <li>
+                  5. If the function is asynchronous, it may register a new
+                  event or callback with the event loop and return immediately.
+                </li>
+
+                <li>
+                  6. The event loop then repeats this process, checking the call
+                  stack for any pending functions and processing any events or
+                  callbacks in the queue.
+                </li>
+              </ul>
+            </h4>
+          </span>
+        </h3>
+      </div>
+    </section>
+
+    <!-- quiz  explain function -->
+    <section class="md:w-9/12 w-[90%] mx-auto mt-12">
+      <h1 class="text-center text-2xl">
+        The quizTimer() and chooseQuiz() functions are explained here
+      </h1>
+
+      <div class="mt-6">
+        <h2>1. What is the purpose of quizTimer() function?</h2>
+        <h3 class="text-green-600 mt-3 space-y-3">
+          Answer:
+          <p class="text-black">
+            The purpose of the quizTimer function is to display a timer that
+            counts up from 0 seconds and updates every second. It does this by
+            using the setInterval method to call an anonymous function that
+            updates the timer HTML element with the current time every second.
+          </p>
+          <p class="text-black">
+            The function takes one parameter dismiss, which is a boolean value.
+            If dismiss is true, it clears the timer using the clearInterval
+            method and stops the timer from running. This is useful when the
+            timer needs to be stopped manually, for example when the quiz is
+            over or the user has clicked a "Submit" button.
+          </p>
+          <p class="text-black">
+            The function also adds a visual effect to the timer by changing the
+            color of the text every 60 seconds. If the seconds count is a
+            multiple of 60, it toggles the color of the text between two shades
+            of red by adding or removing CSS classes from the HTML element. This
+            is a nice touch to add some visual interest to the timer and keep
+            the user engaged.
+          </p>
+        </h3>
+      </div>
+
+      <div class="mt-6">
+        <h2>2. What is the purpose of chooseQuiz() function?</h2>
+
+        <h3 class="text-green-600 mt-3 space-y-3">
+          Answer:
+
+          <p class="text-black">
+            The purpose of the <strong>chooseQuiz</strong> function is to handle
+            the user's selection of a quiz answer and store the selected answer
+            in an <strong>answers</strong> array. The function takes two
+            parameters: <strong>index</strong>, which is the index of the
+            current quiz question in the <strong>quizData</strong> array, and
+            <strong>givenAns</strong>, which is the answer chosen by the user.
+          </p>
+
+          <p class="text-black">
+            The function first checks whether there is already an answer stored
+            for the current quiz question by using the
+            <strong>find</strong> method to search the
+            <strong>answers</strong> array for an object with the same
+            <strong>id</strong> as the current quiz question. If an answer
+            object already exists, it updates the
+            <strong>givenAns</strong> property of that object with the user's
+            new answer using the <strong>splice</strong> method to replace the
+            existing object with a new object that has the updated
+            <strong>givenAns</strong>
+            property. If an answer object does not exist, it creates a new
+            object with the <strong>id</strong>, <strong>question</strong>, and
+            <strong>givenAns</strong> properties and pushes it into the
+            <strong>answers</strong>
+            array.
+          </p>
+
+          <p class="text-black">
+            After updating the <strong>answers</strong> array, the function
+            calls <strong>displayAnswers</strong> to update the display of the
+            quiz answers. This function is not shown in the code provided, but
+            it likely takes the <strong>answers</strong> array and generates
+            HTML to display the user's chosen answers for each quiz question.
+          </p>
+        </h3>
+      </div>
+    </section>
+
+    <!-- Footer section start -->
+    <footer class="py-10 text-center text-sm">
+      Copyright © 2023 Quiz Hero All Rights Reserved.
+    </footer>
+    <!-- Footer section end -->
+  </body>
+</html>
