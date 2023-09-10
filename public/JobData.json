@@ -1,0 +1,111 @@
+[
+  {
+    "id": "b7kd08dk",
+    "company_logo": "/images/google.png",
+    "company_name": "Google LLC",
+    "job_title": "Technical Database Engineer",
+    "work_location_type": "Remote",
+    "location": "California, United States",
+    "employment_type": "Full Time",
+    "salary": "100K - 150K",
+    "job_description": "We are looking for a Technical Database Engineer to join our team. The ideal candidate will have experience in designing, implementing, and maintaining databases for large-scale applications.",
+    "job_responsibility": "As a Technical Database Engineer, you will design, implement, and maintain database systems for large-scale applications. This includes optimizing database performance, ensuring data consistency, developing automation tools, and implementing security controls. You'll also evaluate new technologies to improve efficiency, collaborate with stakeholders, and create documentation.",
+    "educational_requirements": "A degree in Computer Science, Information Systems, or a related field",
+    "experiences": "3-5 years of experience in database design, development, and administration.",
+    "contact_information": {
+      "email": "jobs@google.com",
+      "phone": "123-456-7890"
+    }
+  },
+  {
+    "id": "g7diwbd",
+    "company_logo": "/images/acme.png",
+    "company_name": "Acme Corporation",
+    "job_title": "Software Engineer",
+    "work_location_type": "Remote",
+    "location": "San Francisco, CA",
+    "employment_type": "Full Time",
+    "salary": "80K - 100K",
+    "job_description": "We're looking for a talented software engineer to join our team and help us build amazing software products.",
+    "job_responsibility": "Design and implement new features, maintain and improve existing code, write automated tests, participate in code reviews",
+    "educational_requirements": "Bachelor's degree in Computer Science or related field.",
+    "experiences": "3+ years of experience as a software engineer.",
+    "contact_information": {
+      "email": "jobs@acmecorp.com",
+      "phone": "+1 (123) 456-7890"
+    }
+  },
+
+  {
+    "id": "klsfke7bd",
+    "company_logo": "/images/golbex.png",
+    "company_name": "Globex Corporation",
+    "job_title": "Marketing Manager",
+    "work_location_type": "Onsite",
+    "location": "Dhaka, Bangladesh",
+    "employment_type": "Full Time",
+    "salary": "90K - 120K",
+    "job_description": "We're looking for an experienced data scientist to join our team and help us derive insights from complex data sets.",
+    "job_responsibility": "Develop and implement data models, conduct data analysis and visualization, collaborate with cross-functional teams.",
+    "educational_requirements": "Master's degree in Data Science or related field.",
+    "experiences": "5+ years of experience as a data scientist.",
+    "contact_information": {
+      "email": "jobs@golbex.com",
+      "phone": "+1 (345) 678-9012"
+    }
+  },
+  {
+    "id": "wefkl9l3s",
+    "company_logo": "/images/airbnb.png",
+    "company_name": "Airbnb",
+    "job_title": "UI/UX Designer",
+    "work_location_type": "Onsite",
+    "location": "San Francisco, California",
+    "employment_type": "Part Time",
+    "salary": "40K - 60K",
+    "job_description": "We're looking for a talented UI/UX designer to join our design team and help us create beautiful and user-friendly interfaces for our products.",
+    "job_responsibility": "Create wireframes, mockups, and prototypes for new features and products. Collaborate with other designers, developers, and product managers to ensure a consistent and cohesive user experience across all products. Conduct user research and usability testing to validate design decisions. Stay up-to-date with the latest design trends and technologies.",
+    "educational_requirements": "Bachelor's degree in Design or related field.",
+    "experiences": "3+ years of experience in UI/UX design.",
+    "contact_information": {
+      "email": "jobs@airbnb.com",
+      "phone": "+1 (234) 567-8901"
+    }
+  },
+  {
+    "id": "ofdb7wk3",
+    "company_logo": "/images/netflix.png",
+    "company_name": "Netflix",
+    "job_title": "Graphic Designer",
+    "work_location_type": "Remote",
+    "location": "Los Angeles, California, USA",
+    "employment_type": "Part Time",
+    "salary": "50K - 70K",
+    "job_description": "We're seeking a talented graphic designer to join our team and help us create visually stunning designs that communicate our brand message.",
+    "job_responsibility": "Create graphics, logos, and other visual elements for marketing campaigns, social media, and other channels. Collaborate with other designers, writers, and marketers to develop cohesive visual identities for our products and brand. Use design software and tools to create high-quality graphics and layouts. Stay up-to-date with the latest design trends and technologies.",
+    "educational_requirements": "Bachelor's degree in Graphic Design or related field.",
+    "experiences": "3+ years of experience in graphic design.",
+    "contact_information": {
+      "email": "jobs@netflix.com",
+      "phone": "+1 (123) 456-7890"
+    }
+  },
+  {
+    "id": "aldo34b",
+    "company_logo": "/images/adobe.png",
+    "company_name": "Adobe",
+    "job_title": "Customer Support",
+    "work_location_type": "Onsite",
+    "location": "Los Angeles, California, USA",
+    "employment_type": "Part Time",
+    "salary": "70K - 90K",
+    "job_description": "We are seeking a friendly and organized customer support representative to help us provide excellent customer service to our clients.",
+    "job_responsibility": "Respond to customer inquiries and requests via phone, email, and chat. Help customers troubleshoot issues and provide solutions. Document customer interactions and escalate issues as needed.",
+    "educational_requirements": "High school diploma or equivalent",
+    "experiences": "1+ years of experience in customer support or related field",
+    "contact_information": {
+      "email": "jobs@adobe.com",
+      "phone": "+1 (823) 456-7890"
+    }
+  }
+]
