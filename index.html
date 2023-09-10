@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="phero tube" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Home | Phero Tube</title>
+  </head>
+  <body>
+    <!-- header section -->
+
+    <header class="container mx-auto p-3 sm:p-4 md:p-5 lg:p-6">
+      <nav class="flex items-center justify-between">
+        <a href="/">
+          <img src="./images/logo.svg" alt="phero tube logo" />
+        </a>
+
+        <button
+          id="sort-by-view"
+          class="inline-flex items-center justify-center rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ring-[#25252533] bg-[#25252533] text-black hover:bg-[#25252533]/10 h-19 px-5 py-2 font-semibold"
+        >
+          Sort by view
+        </button>
+
+        <a
+          href="/blog.html"
+          class="inline-flex items-center justify-center rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ring-[#FF1F3D] bg-[#FF1F3D] text-white hover:bg-[#FF1F3D]/90 h-19 px-5 py-2 font-semibold"
+        >
+          Blog
+        </a>
+      </nav>
+      <hr class="mt-4 bg-[#17171733] h-[1.5px]" />
+    </header>
+
+    <!-- main content -->
+    <main class="container mx-auto p-3 sm:p-4 md:p-5 lg:p-6">
+      <!-- filter tab -->
+      <div
+        class="flex items-center gap-4 justify-center"
+        id="category_filter_container"
+      ></div>
+
+      <!-- show all content -->
+      <div id="show-content-container"></div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

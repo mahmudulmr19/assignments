@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="phero tube" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blog | Phero Tube</title>
+  </head>
+  <body>
+    <!-- header section -->
+
+    <header class="container mx-auto p-3 sm:p-4 md:p-5 lg:p-6">
+      <nav class="flex items-center justify-between">
+        <a href="/">
+          <img src="./images/logo.svg" alt="phero tube logo" />
+        </a>
+
+        <a
+          href="/blog.html"
+          class="inline-flex items-center justify-center rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ring-[#FF1F3D] bg-[#FF1F3D] text-white hover:bg-[#FF1F3D]/90 h-19 px-5 py-2 font-semibold"
+        >
+          Blog
+        </a>
+      </nav>
+      <hr class="mt-4 bg-[#17171733] h-[1.5px]" />
+    </header>
+
+    <!-- blog main content   -->
+    <main class="container mx-auto p-3 sm:p-4 md:p-5 lg:p-6">
+      <h1 class="text-gray-800 text-3xl font-bold text-center pb-4">
+        Blog Questions and answers
+      </h1>
+      <!-- Question 1 -->
+      <article class="my-8 max-w-screen-md">
+        <h1 class="text-xl font-semibold">
+          Question: Discuss the scope of var, let, and const
+        </h1>
+
+        <p>
+          <span class="font-medium">Answer:</span> In JavaScript, variables
+          declared using `var`, `let`, and `const` have different scopes. The
+          scope of a variable defines where it can be accessed or used within
+          your code.
+        </p>
+      </article>
+
+      <!-- Question 2 -->
+      <article class="my-8 max-w-screen-md">
+        <h1 class="text-xl font-semibold">
+          Question: Tell us the use cases of null and undefined
+        </h1>
+
+        <p>
+          <span class="font-medium">Answer:</span> In JavaScript, `null` and
+          `undefined` are two distinct values with specific use cases.
+        </p>
+      </article>
+
+      <!-- Question 3 -->
+      <article class="my-8 max-w-screen-md">
+        <h1 class="text-xl font-semibold">
+          Question: What do you mean by REST API?
+        </h1>
+
+        <p>
+          <span class="font-medium">Answer:</span> REST API, which stands for
+          Representational State Transfer Application Programming Interface, is
+          an architectural style for designing networked applications.
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
