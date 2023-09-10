@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Geometry genius</title>
+  </head>
+  <body class="container mx-auto px-4 py-3">
+    <!-- header component -->
+    <header class="bg-[rgba(16,144,216,0.1)] rounded mt-1">
+      <nav class="flex items-center justify-between px-8 py-3">
+        <div class="flex flex-col">
+          <h3 class="font-bold text-2xl sm:text-3xl text-gray-700">
+            Interactive
+          </h3>
+          <span class="font-medium sm:text-xl">Geometry Genius</span>
+        </div>
+        <button
+          onclick="location.href= 'blog.html' "
+          class="font-semibold text-lg text-white bg-sky-500 hover:bg-sky-600 focus:ring outline-none transition-colors duration-200 rounded px-8 py-2"
+        >
+          Blog
+        </button>
+      </nav>
+    </header>
+
+    <!-- main  -->
+    <main class="mt-6">
+      <!-- rectangle triangle ellipse etc -->
+      <section class="flex flex-col md:flex-row gap-6">
+        <div
+          class="md:w-[70%] grid grid-cols-1 md:grid-cols-2 lg:md:grid-cols-3 gap-4"
+        >
+          <!-- Triangle card -->
+          <div
+            id="triangle"
+            onmouseenter="bgColorChange('triangle')"
+            class="box-border border rounded p-6"
+          >
+            <div class="">
+              <img class="mx-auto" src="images/triangle.png" alt="triangle" />
+            </div>
+
+            <h4
+              id="triangle-text"
+              class="text-center font-semibold text-xl mt-4 mb-2"
+            >
+              Triangle
+            </h4>
+            <p class="text-center mb-3">
+              Area (A) = 0.5 <small>&#10005;</small> b <small>&#10005;</small> h
+            </p>
+            <div class="flex items-center justify-between gap-2">
+              <div class="flex items-center justify-between gap-2">
+                <input
+                  id="triangle-base"
+                  class="relative block w-full appearance-none outline-none rounded bg-[#F1F1F1] px-3 py-2 text-gray-900 placeholder-gray-500 border focus:border-sky-500 focus:ring-indigo-500 focus:z-10 sm:text-sm"
+                  type="number"
+                  placeholder="b"
+                />
+                <span>cm</span>
+              </div>
+              <div class="flex items-center justify-between gap-2">
+                <input
+                  id="triangle-height"
+                  class="relative block w-full appearance-none outline-none rounded bg-[#F1F1F1] px-3 py-2 text-gray-900 placeholder-gray-500 border focus:border-sky-500 focus:ring-indigo-500 focus:z-10 sm:text-sm"
+                  type="number"
+                  placeholder="h"
+                />
+                <span>cm</span>
+              </div>
+            </div>
+            <button
+              id="triangle-area-calculate"
+              class="block w-full rounded mt-6 py-2 mx-auto bg-sky-500 hover:bg-sky-600 text-white font-semibold transition-colors duration-200"
+            >
+              Calculate
+            </button>
+          </div>
+
+          <!-- Rectangle -->
+          <div
+            id="rectangle"
+            onmouseenter="bgColorChange('rectangle')"
+            class="box-border border rounded p-6"
+          >
+            <div class="">
+              <img class="mx-auto" src="images/rectangle.png" alt="triangle" />
+            </div>
+
+            <h4
+              id="rectangle-text"
+              class="text-center font-semibold text-xl mt-4 mb-2"
+            >
+              Rectangle
+            </h4>
+            <p class="text-center mb-3">
+              Area (A) = w <small>&#10005;</small> I
+            </p>
+            <div class="flex items-center justify-between gap-2">
+              <div class="flex items-center justify-between gap-2">
+                <input
+                  id="rectangle-width"
+                  class="relative block w-full appearance-none outline-none rounded bg-[#F1F1F1] px-3 py-2 text-gray-900 placeholder-gray-500 border focus:border-sky-500 focus:ring-indigo-500 focus:z-10 sm:text-sm"
+                  type="number"
+                  placeholder="w"
+                />
+                <span>cm</span>
+              </div>
+              <div class="flex items-center justify-between gap-2">
+                <input
+                  id="rectangle-length"
+                  class="relative block w-full appearance-none outline-none rounded bg-[#F1F1F1] px-3 py-2 text-gray-900 placeholder-gray-500 border focus:border-sky-500 focus:ring-indigo-500 focus:z-10 sm:text-sm"
+                  type="number"
+                  placeholder="l"
+                />
+                <span>cm</span>
+              </div>
+            </div>
+            <button
+              id="rectangle-area-calculate"
+              class="block w-full rounded mt-6 md:mt-14 py-2 mx-auto bg-sky-500 hover:bg-sky-600 text-white font-semibold transition-colors duration-200"
+            >
+              Calculate
+            </button>
+          </div>
+
+          <!-- Parallelogram -->
+          <div
+            id="parallelogram"
+            onmouseenter="bgColorChange('parallelogram')"
+            class="box-border border rounded p-6"
+          >
+            <div class="">
+              <img
+                items-ceself-c
+                w-full
+                class="mx-auto"
+                src="images/parallelogram.png"
+                alt="triangle"
+              />
+            </div>
+
+            <h4
+              id="parallelogram-text"
+              class="text-center font-semibold text-xl mt-4"
+            >
+              Parallelogram
+            </h4>
+            <p class="text-center">Area (A) = b <small>&#10005;</small> h</p>
+            <p class="text-center mb-1">b=10cm, h=12cm</p>
+            <div class="flex items-center justify-between gap-2">
+              <div class="flex items-center justify-between gap-2">
+                <input
+                  id="parallelogram-base"
+                  class="relative block w-full appearance-none outline-none rounded bg-[#F1F1F1] px-3 py-2 text-gray-900 placeholder-gray-500 border focus:border-sky-500 focus:ring-indigo-500 focus:z-10 sm:text-sm"
+                  type="number"
+                  placeholder="b"
+                />
+                <span>cm</span>
+              </div>
+              <div class="flex items-center justify-between gap-2">
+                <input
+                  id="parallelogram-height"
+                  class="relative block w-full appearance-none outline-none rounded bg-[#F1F1F1] px-3 py-2 text-gray-900 placeholder-gray-500 border focus:border-sky-500 focus:ring-indigo-500 focus:z-10 sm:text-sm"
+                  type="number"
+                  placeholder="h"
+                />
+                <span>cm</span>
+              </div>
+            </div>
+            <button
+              id="parallelogram-area-calculate"
+              class="block w-full rounded mt-6 md:mt-16 py-2 mx-auto bg-sky-500 hover:bg-sky-600 text-white font-semibold transition-colors duration-200"
+            >
+              Calculate
+            </button>
+          </div>
+
+          <!-- Rhombus -->
+          <div
+            id="rhombus"
+            onmouseenter="bgColorChange('rhombus')"
+            class="box-border border rounded p-6"
+          >
+            <div class="">
+              <img class="mx-auto" src="images/rhombus.png" alt="triangle" />
+            </div>
+
+            <h4
+              id="rhombus-text"
+              class="text-center font-semibold text-xl mt-4"
+            >
+              Rhombus
+            </h4>
+            <p class="text-center">
+              Area (A) = 0.5 <small>&#10005;</small> d<sub>1</sub>
+              <small>&#10005;</small> d<sup>2</sup>
+            </p>
+            <p class="text-center mb-1">
+              d<sub>1</sub> = 16cm &nbsp; d<sub>2</sub> = 8cm
+            </p>
+            <div class="flex items-center justify-between gap-2">
+              <div class="flex items-center justify-between gap-2">
+                <input
+                  id="diagonal-1"
+                  class="relative block w-full appearance-none outline-none rounded bg-[#F1F1F1] px-3 py-2 text-gray-900 placeholder-gray-500 border focus:border-sky-500 focus:ring-indigo-500 focus:z-10 sm:text-sm"
+                  type="number"
+                  placeholder="d"
+                />
+                <span>cm</span>
+              </div>
+              <div class="flex items-center justify-between gap-2">
+                <input
+                  id="diagonal-2"
+                  class="relative block w-full appearance-none outline-none rounded bg-[#F1F1F1] px-3 py-2 text-gray-900 placeholder-gray-500 border focus:border-sky-500 focus:ring-indigo-500 focus:z-10 sm:text-sm"
+                  type="number"
+                  placeholder="d"
+                />
+                <span>cm</span>
+              </div>
+            </div>
+            <button
+              id="rhombus-area-calculator"
+              class="block w-full rounded mt-6 lg:mt-11 py-2 mx-auto bg-sky-500 hover:bg-sky-600 text-white font-semibold transition-colors duration-200"
+            >
+              Calculate
+            </button>
+          </div>
+
+          <!-- Pentagon -->
+          <div
+            id="pentagon"
+            onmouseenter="bgColorChange('pentagon')"
+            class="box-border border rounded p-6"
+          >
+            <div class="">
+              <img class="mx-auto" src="images/pentagon.png" alt="triangle" />
+            </div>
+
+            <h4
+              id="pentagon-text"
+              class="text-center font-semibold text-xl mt-4"
+            >
+              Pentagon
+            </h4>
+            <p class="text-center">
+              Area (A) = 0.5 <small>&#10005;</small> p <small>&#10005;</small> a
+            </p>
+            <p class="text-center mb-1">p = 6cm, a = 10cm</p>
+            <div class="flex items-center justify-between gap-2">
+              <div class="flex items-center justify-between gap-2">
+                <input
+                  id="pentagon-perimeter"
+                  class="relative block w-full appearance-none outline-none rounded bg-[#F1F1F1] px-3 py-2 text-gray-900 placeholder-gray-500 border focus:border-sky-500 focus:ring-indigo-500 focus:z-10 sm:text-sm"
+                  type="number"
+                  placeholder="p"
+                />
+                <span>cm</span>
+              </div>
+              <div class="flex items-center justify-between gap-2">
+                <input
+                  id="pentagon-apothem"
+                  class="relative block w-full appearance-none outline-none rounded bg-[#F1F1F1] px-3 py-2 text-gray-900 placeholder-gray-500 border focus:border-sky-500 focus:ring-indigo-500 focus:z-10 sm:text-sm"
+                  type="number"
+                  placeholder="a"
+                />
+                <span>cm</span>
+              </div>
+            </div>
+            <button
+              id="pentagon-area-calculator"
+              class="block w-full rounded mt-6 py-2 mx-auto bg-sky-500 hover:bg-sky-600 text-white font-semibold transition-colors duration-200"
+            >
+              Calculate
+            </button>
+          </div>
+
+          <!-- Ellipse -->
+          <div
+            id="ellipse"
+            onmouseenter="bgColorChange('ellipse')"
+            class="box-border border rounded p-6"
+          >
+            <div class="">
+              <img class="mx-auto" src="images/ellipse.png" alt="triangle" />
+            </div>
+
+            <h4
+              id="ellipse-text"
+              class="text-center font-semibold text-xl mt-4"
+            >
+              Ellipse
+            </h4>
+            <p class="text-center">Area (A) = &#960;ab</p>
+            <p class="text-center mb-1">a = 10cm, b = 4cm</p>
+            <div class="flex items-center justify-between gap-2">
+              <div class="flex items-center justify-between gap-2">
+                <input
+                  id="ellipse-axis-a"
+                  class="relative block w-full appearance-none outline-none rounded bg-[#F1F1F1] px-3 py-2 text-gray-900 placeholder-gray-500 border focus:border-sky-500 focus:ring-indigo-500 focus:z-10 sm:text-sm"
+                  type="number"
+                  placeholder="a"
+                />
+                <span>cm</span>
+              </div>
+              <div class="flex items-center justify-between gap-2">
+                <input
+                  id="ellipse-axis-b"
+                  class="relative block w-full appearance-none outline-none rounded bg-[#F1F1F1] px-3 py-2 text-gray-900 placeholder-gray-500 border focus:border-sky-500 focus:ring-indigo-500 focus:z-10 sm:text-sm"
+                  type="number"
+                  placeholder="b"
+                />
+                <span>cm</span>
+              </div>
+            </div>
+            <button
+              id="ellipse-area-calculator"
+              class="block w-full rounded mt-6 md:mt-20 lg:mt-16 md:mb-8 py-2 mx-auto bg-sky-500 hover:bg-sky-600 text-white font-semibold transition-colors duration-200"
+            >
+              Calculate
+            </button>
+          </div>
+        </div>
+
+        <div class="rounded border p-5 md:w-[30%]">
+          <h3 class="text-center">Area Calculation</h3>
+          <div id="area-calculation" class="flex flex-col gap-2.5 mt-4"></div>
+        </div>
+      </section>
+    </main>
+    <script src="js/index.js"></script>
+  </body>
+</html>
