@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "authorName": "Mr. Raju",
+    "title": "Set up CodeGPT in Visual Studio Code",
+    "coverImage": "/assets/cover1.jpg",
+    "authorImage": "/assets/user1.png",
+    "readTime": "6min read time",
+    "publishIn": "Mar 15 (5 days ago)",
+    "publishInNum": 6
+  },
+  {
+    "id": 2,
+    "authorName": "Mr. Paul Knulst",
+    "title": "Advanced JavaScript Functions to Improve Code Quality",
+    "coverImage": "/assets/cover2.jpg",
+    "authorImage": "/assets/user2.png",
+    "readTime": "13min read time",
+    "publishIn": "Feb 04 (1 month ago)",
+    "publishInNum": 13
+  },
+  {
+    "id": 3,
+    "authorName": "Mr. Sikandar",
+    "title": "Best languages you need learn in 2023?",
+    "coverImage": "/assets/cover3.jpg",
+    "authorImage": "/assets/user3.png",
+    "readTime": "2min read time",
+    "publishIn": "Mar 26 (7 days ago)",
+    "publishInNum": 2
+  },
+  {
+    "id": 4,
+    "authorName": "Mrs. Paisley",
+    "title": "How to Fetch API Data in React Like a Pro",
+    "coverImage": "/assets/cover4.jpg",
+    "authorImage": "/assets/user4.png",
+    "readTime": "3min read time",
+    "publishIn": "Oct 04 (5 month ago)",
+    "publishInNum": 3
+  }
+]
